@@ -23,13 +23,17 @@
         <nav class="nav-bar">
             <ul class="d-flex" style="justify-content: space-around;">
                 <li class="d-flex"><i class="fa fa-dropbox fa-2x"> </i> <p class="logo-b"><span class="logo-h"> M</span>OVIE<span class="logo-h">Z</span>ONE</p></li>
-                <li><!-- search bar -->
+                <li style="width: 550px;"><!-- search bar -->
                   <form role="search" autocomplete="off" class="search-bar">
                     <div>
                       <input type="search" id="search" data-search placeholder="Search Movies here......">
                       <button class="search-btn"><i class="fa fa-search"></i></button>
                     </div>
                   </form>
+                  <!-- search card -->
+                  <div class="search-container">
+                    <div class="search-card" data-search-container></div>
+                  </div>
                 </li>
                 <li><a href="#last" class="alast" data-btn><p id="fav-h"> Favourite Movies <i class="f	fa fa-angle-down"></i></p></a></li>
             </ul>
@@ -66,11 +70,86 @@
         </button>
       </div>
       <!-- carousel End -->
-      <!-- search card -->
-      <div class="search-container">
-        <div class="search-card" data-search-container></div>
+
+      <!-- Latest movies -->
+      <h1 style="color: white; text-align: center;">Latest movies</h1>
+      <div class="d-flex justify-content-center">
+        <div class="favmovies-list detail-card" data-fav-movies>
+          <div class="card">
+            <div class="card-container">
+              <div> 
+                <img class="image" src="images/movie1.jpg" alt="movie poster" data-card-poster>
+              </div>
+              <p class="title" data-card-title>Badhiya</p>
+              <p class="movei-data" data-card-release><span class="des-head" data-card-Released>17/23/2018</span></p>
+              <p class="movei-data" data-card-run><span class="des-head" data-card-runhade></span>149 min</p>
+            </div>
+          </div>
+        </div>
+        <div class="favmovies-list detail-card" data-fav-movies>
+          <div class="card">
+            <div class="card-container">
+              <div> 
+                <img class="image" src="images/movie2.jpg" alt="movie poster" data-card-poster>
+              </div>
+              <p class="title" data-card-title>Thor</p>
+              <p class="movei-data" data-card-release><span class="des-head" data-card-Released></span>17/23/2018</p>
+              <p class="movei-data" data-card-run><span class="des-head" data-card-runhade></span>180 min</p>
+            </div>
+          </div>
+        </div>
+        <div class="favmovies-list detail-card" data-fav-movies>
+          <div class="card">
+            <div class="card-container">
+              <div> 
+                <img class="image" src="images/movie3.jpg" alt="movie poster" data-card-poster>
+              </div>
+              <p class="title" data-card-title>War</p>
+              <p class="movei-data" data-card-release><span class="des-head" data-card-Released></span>17/23/2018</p>
+              <p class="movei-data" data-card-run><span class="des-head" data-card-runhade></span>190 min</p>
+            </div>
+          </div>
+        </div>
+        <div class="favmovies-list detail-card" data-fav-movies>
+          <div class="card">
+            <div class="card-container">
+              <div> 
+                <img class="image" src="images/movie4.jpg" alt="movie poster" data-card-poster>
+              </div>
+              <p class="title" data-card-title>Megan</p>
+              <p class="movei-data" data-card-release><span class="des-head" data-card-Released></span>17/23/2018</p>
+              <p class="movei-data" data-card-run><span class="des-head" data-card-runhade></span>148 min</p>
+            </div>
+          </div>
+        </div>
+        <div class="favmovies-list detail-card" data-fav-movies>
+          <div class="card">
+            <div class="card-container">
+              <div> 
+                <img class="image" src="images/movie.jpg" alt="movie poster" data-card-poster>
+              </div>
+              <p class="title" data-card-title>VR</p>
+              <p class="movei-data" data-card-release><span class="des-head" data-card-Released></span>17/23/2018</p>
+              <p class="movei-data" data-card-run><span class="des-head" data-card-runhade></span>170 min</p>
+            </div>
+          </div>
+        </div>
+        <div class="favmovies-list detail-card" data-fav-movies>
+          <div class="card">
+            <div class="card-container">
+              <div> 
+                <img class="image" src="images/movie5.jpg" alt="movie poster" data-card-poster>
+              </div>
+              <p class="title" data-card-title>The Lost-City</p>
+              <p class="movei-data" data-card-release><span class="des-head" data-card-Released></span>17/23/2018</p>
+              <p class="movei-data" data-card-run><span class="des-head" data-card-runhade></span>160 min</p>
+            </div>
+          </div>
+        </div>
       </div>
+      <h1 style="color: white; text-align: center;">Favourites movies</h1>
       
+      <!-- search template -->
       <template data-search-template>
         <div class="search-list">
           <img src="" alt="poster" data-image>
